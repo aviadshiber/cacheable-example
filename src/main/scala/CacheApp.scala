@@ -5,7 +5,7 @@ object CacheApp {
 
   def main(args: Array[String]): Unit = {
     //example of immutable linked list:
-    // 1 <-> 2 <-> 3 <-> 4
+    // 3 <-> 1 <-> 2 <-> 4
     val list = DLEmpty.prepend(1).append(2).prepend(3).append(4)
     println(list.value) // 1
     println(list.next.value) // 2
