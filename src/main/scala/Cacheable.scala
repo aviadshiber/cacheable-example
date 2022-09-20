@@ -1,10 +1,7 @@
-import com.sun.istack.internal.Nullable
-
 import scala.collection.mutable
 
 trait Cacheable[K, V >: Null <: AnyRef] {
   def get(key: K): V
-
   def size(): Int
 }
 
